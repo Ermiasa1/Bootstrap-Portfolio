@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>  .row {animation-name: bcolor;
+    animation-duration: 10s;
+    } 
+   @keyframes bcolor{
+    15%   {background-color:darkseagreen;}
+    35%  {background-color:pink;}
+    70%  {background-color: lightgreen}
+    100%  {background-color:dodgerblue}
+    }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Your Name</a>
+    </div>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a href="index.html">About</a></li>
+        <li> <a href="portfolio.html">Portfolio</a></li>
+        <li> <a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+       <div class="page-header">
+         <h1><small>About Me</small></h1>
+       </div>
+   </div>
+ </div>
+  <div class="row">
+      <div class="col-lg-12">
+        <form action="" method="POST" enctype="multipart/form-data" id="form_id">
+            <div class="form-group">
+                 <h5><label for="inputName">Name</label></h5>
+                  <input type="text" name="career[name]" class="form-control" tabindex="1" placeholder="Enter name" pattern="[a-zA-Z. ]{1,50}" required>
+            </div>
+            <div class="form-group">
+                 <h5><label for="inputEmail">Email</label></h5>
+
+                <input type="email" name="career[email]" class="form-control" tabindex="2" placeholder="Enter email address" required>
+            </div>
+            <div class="form-group">
+                 <h5><label for="inputMobile">Mobile</label></h5>
+
+                <input type="tel" name="career[mobile]" class="form-control" tabindex="3" placeholder="Enter mobile number" pattern="[0-9]{10}" maxlength="10" required>
+            </div>
+            <div class="form-group">
+                 <h5><label for="inputMessage">Message</label></h5>
+                 <textarea name="career[message]" class="form-control" tabindex="4"
+                  placeholder="Write details" required></textarea>
+           </div>
+            <button type="submit" name="submit" class="btn btn-primary" tabindex="5">Submit</button>
+        </form>
+      </div>
+   </div>
+</div>
+<footer class="footer">
+  <div class="container" style="position: fixed; bottom: 0;
+  left: 0;width: 100%;  height: 30px;  background-color:  #a00fa5d0;">
+    <p class="text-muted" style="text-align: center; color: #ffffff"> sticky footer </p>
+  </div>
+</footer>
+</body>
+</html>
